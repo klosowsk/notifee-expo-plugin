@@ -37,6 +37,13 @@ export type NotifeeExpoPluginProps = {
   androidIcons?: NotifeeAndroidIcon[];
 
   /**
+   * Specifies the background modes to enable for the app.
+   * If not provided, the default background modes are used.
+   * Default background modes: ["remote-notification"].
+   */
+  backgroundModes?: string[];
+
+  /**
    * Sets the deployment target of the notification service extension for iOS.
    * This should match the deployment target of the main app.
    */
